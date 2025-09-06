@@ -1,4 +1,4 @@
-# super_app
+# flutter_application
 
 A new Flutter project.
 
