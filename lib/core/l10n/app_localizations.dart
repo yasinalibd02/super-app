@@ -8,6 +8,15 @@ class AppLocalizations {
 
   AppLocalizations(this.locale);
 
+  static const List<Locale> supportedLocales = [
+    Locale('en'),
+    Locale('zh'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('hi'),
+    Locale('bn'),
+  ];
+
   static const LocalizationsDelegate<AppLocalizations> delegate =
       _AppLocalizationsDelegate();
 
@@ -16,12 +25,14 @@ class AppLocalizations {
   }
 
   Future<bool> load() async {
-    final String jsonString = await rootBundle
-        .loadString('assets/l10n/${locale.languageCode}.json');
+    final String jsonString = await rootBundle.loadString(
+      'assets/l10n/${locale.languageCode}.json',
+    );
     final Map<String, dynamic> jsonMap = json.decode(jsonString);
 
-    _localizedStrings =
-        jsonMap.map((key, value) => MapEntry(key, value.toString()));
+    _localizedStrings = jsonMap.map(
+      (key, value) => MapEntry(key, value.toString()),
+    );
 
     return true;
   }
@@ -36,8 +47,9 @@ class _AppLocalizationsDelegate
   const _AppLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) =>
-      ['en', 'zh', 'es', 'fr', 'hi'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => AppLocalizations.supportedLocales
+      .map((e) => e.languageCode)
+      .contains(locale.languageCode);
 
   @override
   Future<AppLocalizations> load(Locale locale) async {
