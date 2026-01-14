@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
-import 'package:template/app/import.dart';
+
+import '../base/app_core.dart';
 
 class CustomTextSpanWidget extends StatelessWidget {
   final String? firstText;

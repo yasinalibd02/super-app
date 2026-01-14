@@ -1,7 +1,8 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:template/core/base/app_core.dart';
-import 'package:template/core/components/text.dart';
+
+import '../base/app_core.dart';
+import 'text.dart';
 
 abstract class DropdownModel {
   String get title;

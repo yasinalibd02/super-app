@@ -43,14 +43,14 @@ class CongratulationScreen extends StatelessWidget {
         title: 'Back To Login',
         buttonTextColor: AppColors.white,
         onTap: () {
-          route.pushNamed;
+          //
         },
       ),
     );
   }
 
   Widget _congratulationImageWidget(BuildContext context) {
-    return Image.asset(Assets.icons.bell);
+    return Icon(Icons.check_circle, size: AppSize.iconSize.l * 2);
   }
 
   Widget _congratulationInfoWidget(BuildContext context) {

@@ -1,9 +1,6 @@
 import 'dart:ui';
 
-import 'package:template/core/base/app_core.dart';
-
 import '../base/app_core.dart';
-import '../utils/globals.dart';
 
 class ShowApp {
   static dialog({
@@ -236,8 +233,8 @@ class ShowApp {
       textDirection: textDirection,
       currentDate: currentDate ?? DateTime.now(),
     );
-    if (picked != null && picked != Globals.selectedDate.value) {
-      Globals.selectedDate.value = picked;
-    }
+    // if (picked != null && picked != Globals.selectedDate.value) {
+    //   Globals.selectedDate.value = picked;
+    // }
   }
 }

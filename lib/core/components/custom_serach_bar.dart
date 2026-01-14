@@ -1,5 +1,4 @@
 import '../../app/import.dart';
-import '../../assets/assets.dart';
 
 class SearchFieldWidget extends StatelessWidget {
   final TextEditingController? controller;
@@ -9,14 +8,15 @@ class SearchFieldWidget extends StatelessWidget {
   final String? icon;
   final double? iconHeight;
 
-  const SearchFieldWidget(
-      {super.key,
-      this.text,
-      this.controller,
-      this.onBackPress,
-      this.onOptionsPress,
-      this.icon,
-      this.iconHeight});
+  const SearchFieldWidget({
+    super.key,
+    this.text,
+    this.controller,
+    this.onBackPress,
+    this.onOptionsPress,
+    this.icon,
+    this.iconHeight,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,9 @@ class SearchFieldWidget extends StatelessWidget {
         height: 48,
         decoration: BoxDecoration(
           border: Border.all(
-              width: 1, color: AppColors.black.withValues(alpha: 0.1)),
+            width: 1,
+            color: AppColors.black.withValues(alpha: 0.1),
+          ),
           color: AppColors.white,
           borderRadius: BorderRadius.circular(AppSize.radius),
         ),
@@ -42,14 +44,15 @@ class SearchFieldWidget extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: text ?? "Search",
                     hintStyle: TextStyle(
-                        color: AppColors.black.withValues(alpha: 0.3),
-                        fontSize: AppSize.fontSize.bm,
-                        fontWeight: FontWeight.w400),
+                      color: AppColors.black.withValues(alpha: 0.3),
+                      fontSize: AppSize.fontSize.bm,
+                      fontWeight: FontWeight.w400,
+                    ),
                     border: InputBorder.none,
                     suffixIcon: Padding(
                       padding: Space.all.a10,
                       child: CustomIcon(
-                        icon ?? Assets.icons.search,
+                        icon,
                         height: iconHeight ?? AppSize.iconSize.m * 1.1,
                         color: AppColors.black.withValues(alpha: 0.2),
                       ),

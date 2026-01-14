@@ -1,0 +1,143 @@
+PODS:
+  - audioplayers_darwin (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - CwlCatchException (2.2.1):
+    - CwlCatchExceptionSupport (~> 2.2.1)
+  - CwlCatchExceptionSupport (2.2.1)
+  - Flutter (1.0.0)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.3.0):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - speech_to_text (7.2.0):
+    - CwlCatchException
+    - Flutter
+    - FlutterMacOS
+  - sqflite_darwin (0.0.4):
+    - Flutter
+    - FlutterMacOS
+  - Stripe (24.23.3):
+    - StripeApplePay (= 24.23.3)
+    - StripeCore (= 24.23.3)
+    - StripePayments (= 24.23.3)
+    - StripePaymentsUI (= 24.23.3)
+    - StripeUICore (= 24.23.3)
+  - stripe_ios (0.0.1):
+    - Flutter
+    - Stripe (~> 24.23.0)
+    - stripe_ios/stripe_ios (= 0.0.1)
+    - stripe_ios/stripe_objc (= 0.0.1)
+    - StripeApplePay (~> 24.23.0)
+    - StripeFinancialConnections (~> 24.23.0)
+    - StripePayments (~> 24.23.0)
+    - StripePaymentSheet (~> 24.23.0)
+    - StripePaymentsUI (~> 24.23.0)
+  - stripe_ios/stripe_ios (0.0.1):
+    - Flutter
+    - Stripe (~> 24.23.0)
+    - stripe_ios/stripe_objc
+    - StripeApplePay (~> 24.23.0)
+    - StripeFinancialConnections (~> 24.23.0)
+    - StripePayments (~> 24.23.0)
+    - StripePaymentSheet (~> 24.23.0)
+    - StripePaymentsUI (~> 24.23.0)
+  - stripe_ios/stripe_objc (0.0.1):
+    - Flutter
+    - Stripe (~> 24.23.0)
+    - StripeApplePay (~> 24.23.0)
+    - StripeFinancialConnections (~> 24.23.0)
+    - StripePayments (~> 24.23.0)
+    - StripePaymentSheet (~> 24.23.0)
+    - StripePaymentsUI (~> 24.23.0)
+  - StripeApplePay (24.23.3):
+    - StripeCore (= 24.23.3)
+  - StripeCore (24.23.3)
+  - StripeFinancialConnections (24.23.3):
+    - StripeCore (= 24.23.3)
+    - StripeUICore (= 24.23.3)
+  - StripePayments (24.23.3):
+    - StripeCore (= 24.23.3)
+    - StripePayments/Stripe3DS2 (= 24.23.3)
+  - StripePayments/Stripe3DS2 (24.23.3):
+    - StripeCore (= 24.23.3)
+  - StripePaymentSheet (24.23.3):
+    - StripeApplePay (= 24.23.3)
+    - StripeCore (= 24.23.3)
+    - StripePayments (= 24.23.3)
+    - StripePaymentsUI (= 24.23.3)
+  - StripePaymentsUI (24.23.3):
+    - StripeCore (= 24.23.3)
+    - StripePayments (= 24.23.3)
+    - StripeUICore (= 24.23.3)
+  - StripeUICore (24.23.3):
+    - StripeCore (= 24.23.3)
+
+DEPENDENCIES:
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/darwin`)
+  - Flutter (from `Flutter`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - speech_to_text (from `.symlinks/plugins/speech_to_text/darwin`)
+  - sqflite_darwin (from `.symlinks/plugins/sqflite_darwin/darwin`)
+  - stripe_ios (from `.symlinks/plugins/stripe_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeFinancialConnections
+    - StripePayments
+    - StripePaymentSheet
+    - StripePaymentsUI
+    - StripeUICore
+
+EXTERNAL SOURCES:
+  audioplayers_darwin:
+    :path: ".symlinks/plugins/audioplayers_darwin/darwin"
+  Flutter:
+    :path: Flutter
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  speech_to_text:
+    :path: ".symlinks/plugins/speech_to_text/darwin"
+  sqflite_darwin:
+    :path: ".symlinks/plugins/sqflite_darwin/darwin"
+  stripe_ios:
+    :path: ".symlinks/plugins/stripe_ios/ios"
+
+SPEC CHECKSUMS:
+  audioplayers_darwin: 4f9ca89d92d3d21cec7ec580e78ca888e5fb68bd
+  CwlCatchException: 7acc161b299a6de7f0a46a6ed741eae2c8b4d75a
+  CwlCatchExceptionSupport: 54ccab8d8c78907b57f99717fb19d4cc3bce02dc
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  path_provider_foundation: bb55f6dbba17d0dccd6737fe6f7f34fbd0376880
+  permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d
+  shared_preferences_foundation: 7036424c3d8ec98dfe75ff1667cb0cd531ec82bb
+  speech_to_text: 3b313d98516d3d0406cea424782ec25470c59d19
+  sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
+  Stripe: a4b6584549bac3698733ed564e55b0b067cfda8a
+  stripe_ios: b720131bae6025a497bf7bb030e238a1a2781f18
+  StripeApplePay: c8b005f1b5a242c455f76b42eda08660e9e33102
+  StripeCore: 9a87da02c7fefc9b965218210a0902acd71157ab
+  StripeFinancialConnections: 331ece5b6446dbf6eac62b94f8e365d0af9e000a
+  StripePayments: 95ca9bc60eca45f02cd35b125a67a969c9d62ce7
+  StripePaymentSheet: 7bc20a0ab10d91acc06dc449ab61bb2cf221b0f4
+  StripePaymentsUI: 1590647b3f635a58fb0e7058d86d3e9ff89250d4
+  StripeUICore: a63d95d604e70a5895f9d6b09c49a46757e86353
+
+PODFILE CHECKSUM: 3c63482e143d1b91d2d2560aee9fb04ecc74ac7e
+
+COCOAPODS: 1.16.2
