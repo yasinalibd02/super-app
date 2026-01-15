@@ -6,6 +6,7 @@ import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flame/collisions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flame_audio/flame_audio.dart';
 
 void main() {
@@ -75,7 +76,11 @@ class FlappyBirdGame extends FlameGame
   @override
   Future<void> onLoad() async {
     // Load audio assets
-    await FlameAudio.audioCache.loadAll(['hit.wav', 'point.wav']);
+    try {
+      await FlameAudio.audioCache.loadAll(['hit.wav', 'point.wav']);
+    } catch (e) {
+      debugPrint("Error loading audio: $e");
+    }
 
     add(Cloud(position: Vector2(100, 100)));
     add(Cloud(position: Vector2(300, 50)));
@@ -116,6 +121,7 @@ class FlappyBirdGame extends FlameGame
   void onTapDown(TapDownEvent event) {
     if (isGameOver) return;
     bird.jump();
+    HapticFeedback.lightImpact();
   }
 
   void spawnPipes() {
@@ -147,6 +153,8 @@ class FlappyBirdGame extends FlameGame
   void gameOver() {
     if (isGameOver) return;
     isGameOver = true;
+    HapticFeedback.heavyImpact();
+    // Play sound "pop" (using hit.wav as requested/available)
     try {
       FlameAudio.play('hit.wav');
     } catch (e) {
@@ -224,6 +232,9 @@ class Bird extends PositionComponent
         anchor: Anchor.center,
       ),
     );
+
+    // Scale the bird up slightly as per previous request
+    scale = Vector2.all(1.5);
 
     add(CircleHitbox(radius: 15, position: size / 2, anchor: Anchor.center));
   }
